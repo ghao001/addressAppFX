@@ -81,7 +81,7 @@ public class MainApp extends Application {
             loader.setLocation(MainApp.class.getResource("view/PersonOverview.fxml"));
             AnchorPane personOverview = (AnchorPane) loader.load();
             //link controller to FXML, and give it the access to the main
-            PersonOverviewController controller = new PersonOverviewController();
+            PersonOverviewController controller = loader.getController();
             controller.setMainApp(this);
             // Set person overview into the center of root layout.
             rootLayout.setCenter(personOverview);

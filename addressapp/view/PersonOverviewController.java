@@ -55,4 +55,23 @@ public class PersonOverviewController {
     this.mainApp = mainApp;
     personTable.setItems(mainApp.getList());
     }
+    
+    /**
+     * Fill out left part of the view, show details of a selected person
+     */
+    public void showPersonDetails(Person person) {
+        if(person != null) {
+            firstNameLabel.setText(person.getFirstName());
+            lastNameLabel.setText(person.getLastName());
+            streetLabel.setText(person.getStreet());
+            postalCodeLabel.setText(Integer.toString(person.getPostalCode()));
+            cityLabel.setText(person.getCity());
+        } else {
+            firstNameLabel.setText("");
+            lastNameLabel.setText("");
+            streetLabel.setText("");
+            postalCodeLabel.setText("");
+            cityLabel.setText("");
+        }
+    }
 }
