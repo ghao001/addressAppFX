@@ -56,9 +56,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
             </GridPane>
-            <Button layoutX="142.0" layoutY="256.0" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="New" AnchorPane.rightAnchor="140.0" />
-            <Button layoutX="203.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Edit" AnchorPane.rightAnchor="80.0" />
-            <Button layoutX="266.0" layoutY="256.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Delete" AnchorPane.rightAnchor="20.0" />
+            <Button layoutX="142.0" layoutY="256.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleNew" prefHeight="25.0" prefWidth="50.0" text="New" AnchorPane.rightAnchor="140.0" />
+            <Button layoutX="203.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleEdit" prefHeight="25.0" prefWidth="50.0" text="Edit" AnchorPane.rightAnchor="80.0" />
+            <Button layoutX="266.0" layoutY="256.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="25.0" prefWidth="51.0" text="Delete" AnchorPane.rightAnchor="20.0" />
           </children>
         </AnchorPane>
       </items>

@@ -14,7 +14,7 @@ import java.time.format.DateTimeParseException;
  * @author Howard
  */
 public class DateFormat {
-    private static final String Date_PATTERN = "mm,dd,yyyy";
+    private static final String Date_PATTERN = "MM,dd,yyyy";
     private static final DateTimeFormatter DATE_FORMATTER = DateTimeFormatter.ofPattern(Date_PATTERN);
     
     /**
